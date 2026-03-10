@@ -12,8 +12,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        # allow GitHub Actions to push changes (required by peaceiris action)
         with:
-          persist-credentials: false # otherwise the token used is the GITHUB_TOKEN, which does not have permission to push to gh-pages
+          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -22,6 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Build project
         run: npm run build
