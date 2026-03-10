@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LuckyDaysSite/static/css/main.dc244a28.css",
+    "main.js": "/LuckyDaysSite/static/js/main.f046bfe1.js",
+    "index.html": "/LuckyDaysSite/index.html",
+    "main.dc244a28.css.map": "/LuckyDaysSite/static/css/main.dc244a28.css.map",
+    "main.f046bfe1.js.map": "/LuckyDaysSite/static/js/main.f046bfe1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc244a28.css",
+    "static/js/main.f046bfe1.js"
+  ]
+}
